@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王者荣耀英雄展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #232326;
+            color: rgb(17, 48, 80);
+            padding: 20px;
+        }
+        
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffcc00;
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .hero-card {
+            width: 200px;
+            height: 280px;
+            background: linear-gradient(to bottom, #2a2a4a, #1a1a2e);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(181, 218, 71, 0.3);
+            transition: all 0.4s ease;
+            border: 2px solid #333355;
+        }
+        
+        .hero-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 25px rgba(255, 204, 0, 0.2);
+            border-color: #ffcc00;
+        }
+        
+        .hero-img {
+            width: 100%;
+            height: 150px;
+            background-color: #d84210;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #ffcc00;
+        }
+        
+        .hero-name {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 0 10px;
+            color: #ffcc00;
+        }
+        
+        .hero-type {
+            text-align: center;
+            color: #2cfadb;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .hero-desc {
+            font-size: 14px;
+            padding: 0 15px;
+            text-align: center;
+            color: #cccccc;
+            line-height: 1.4;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #d1da1f;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="title">王者荣耀英雄展示</h1>
+    
+    <div class="hero-container">
+        <div class="hero-card">
+            <div class="hero-img">⚔️</div>
+            <div class="hero-name">李白</div>
+            <div class="hero-type">刺客/战士</div>
+            <div class="hero-desc">诗剑双绝，十步杀一人，千里不留行。</div>
+        </div>
+        
+        <div class="hero-card">
+            <div class="hero-img">🏹</div>
+            <div class="hero-name">后羿</div>
+            <div class="hero-type">射手</div>
+            <div class="hero-desc">射日英雄，拥有超远射程和强大持续输出能力。</div>
+        </div>
+        
+        <div class="hero-card">
+            <div class="hero-img">🛡️</div>
+            <div class="hero-name">亚瑟</div>
+            <div class="hero-type">坦克/战士</div>
+            <div class="hero-desc">圣骑士，拥有强大生存能力和控制技能。</div>
+        </div>
+        
+        <div class="hero-card">
+            <div class="hero-img">🔮</div>
+            <div class="hero-name">貂蝉</div>
+            <div class="hero-type">法师</div>
+            <div class="hero-desc">绝世舞姬，能在花雨中翩翩起舞，造成大量法术伤害。</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        鼠标悬停在卡片上查看动画效果 | 王者荣耀英雄展示
+    </div>
+
+</body>
+</html>
